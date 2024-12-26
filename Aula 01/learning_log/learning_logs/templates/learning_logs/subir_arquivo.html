@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastas do Google Drive</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+
+<body>
+    <h1>Arquivos subidos para as pastas: </h1>
+    <ul>
+        {% for id in array %}
+        <li>
+            <strong>ID:</strong> {{id}}
+        </li>
+        {% empty %}
+        <li>Nenhuma pasta encontrada.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

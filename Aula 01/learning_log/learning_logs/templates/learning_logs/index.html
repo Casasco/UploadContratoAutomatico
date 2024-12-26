@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastas do Google Drive</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+
+<body>
+    <h1>Pastas no Drive Compartido</h1>
+
+    <!-- Formulário que envia os IDs selecionados ao servidor -->
+    <form method="POST" action="{% url 'salvar_ids' %}">
+        {% csrf_token %}
+        <ul>
+            {% for pasta in pastas %}
+            <li>
+                <!-- Cada checkbox agora inclui ID e Nome no value -->
+                <input type="checkbox" name="pastas" value="{{ pasta.id }}|{{ pasta.name }}">
+                <strong>Nome:</strong> {{ pasta.name }}
+                <strong> | </strong>
+                <strong>ID:</strong> {{ pasta.id }}
+            </li>
+            {% empty %}
+            <li>Nenhuma pasta encontrada.</li>
+            {% endfor %}
+        </ul>
+        <button type="submit">Salvar IDs Selecionados</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastas do Google Drive</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+
+<body>
+    <h1>Pastas no banco de dados interno</h1>
+    {% block content %}
+    <ul>
+        {% for projeto in BDprojetos %}
+        <li>
+            <strong>ID:</strong> {{ projeto.idProjeto }}<br>
+            <strong>Nome:</strong> {{ projeto.nomeProjeto }}
+        </li>
+        {% empty %}
+        <li>Nenhum projeto encontrado.</li>
+        {% endfor %}
+    </ul>
+
+    {%endblock content%}
+</body>
+
+</html>

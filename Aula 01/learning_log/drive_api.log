@@ -673,3 +673,18 @@ INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\lear
 INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_log\settings.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.

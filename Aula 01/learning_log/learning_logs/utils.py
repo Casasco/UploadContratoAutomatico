@@ -8,7 +8,7 @@ import logging
 logging.basicConfig(filename='drive_api.log', level=logging.ERROR)
 
 # Caminho para o arquivo de credenciais e ID do Drive compartilhado
-GOOGLE_APPLICATION_CREDENTIALS = r"C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\credentials\uploadcontratos-442920-8e111876b414.json"
+GOOGLE_APPLICATION_CREDENTIALS = r"C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\credentials\uploadcontratos-442920-4a331bd12026.json"
 DRIVE_ID = '0AKlI-riQF64nUk9PVA'
 
 def listar_pastas_drive():
@@ -75,14 +75,7 @@ def listar_pastas_drive():
     return folders  # Retorna a lista de pastas
 
 
-def uploadAndCopyFile(arquivoPrincipal, targetFolders):
-    try:
-        # Configuração do escopo e credenciais
-        SCOPES = ['https://www.googleapis.com/auth/drive']
-        creds = Credentials.from_service_account_file(
-            GOOGLE_APPLICATION_CREDENTIALS, scopes=SCOPES
-        )
-    return
+
 
         
 

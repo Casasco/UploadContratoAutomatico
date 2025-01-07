@@ -688,3 +688,132 @@ ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'er
 INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
 ERROR:root:Erro ao listar pastas: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
 INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+WARNING:django.request:Bad Request: /subir_arquivo/
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /subir_arquivo/
+Traceback (most recent call last):
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py", line 59, in subir_arquivo
+    results = upload_pdf_to_folders(file_path, array_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py", line 91, in upload_pdf_to_folders
+    credentials = Credentials.from_service_account_file(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\google\oauth2\service_account.py", line 260, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\google\auth\_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'path/to/credentials.json'
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:django.request:Internal Server Error: /subir_arquivo/
+Traceback (most recent call last):
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py", line 59, in subir_arquivo
+    results = upload_pdf_to_folders(file_path, array_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py", line 101, in upload_pdf_to_folders
+    media = MediaFileUpload(file_path, mimetype='application/pdf')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\googleapiclient\http.py", line 594, in __init__
+    self._fd = open(self._filename, "rb")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/Currículo - Gabriel Marino Casasco.pdf'
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /subir_arquivo/
+Traceback (most recent call last):
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py", line 59, in subir_arquivo
+    with open(file_path, 'wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/curriculo-gabriel-marino-casascopdf'
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /subir_arquivo/
+Traceback (most recent call last):
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\ll_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py", line 62, in subir_arquivo
+    with open(file_path, 'wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/curriculo-gabriel-marino-casascopdf'
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:django.request:Internal Server Error: /subir_arquivo/
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:django.request:Internal Server Error: /subir_arquivo/
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_logs\utils.py changed, reloading.

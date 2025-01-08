@@ -12,14 +12,17 @@
 <body>
     <h1>Arquivos subidos para as pastas: </h1>
     <ul>
-        {% for id in array %}
+        {% for nome in nome_pastas %}
         <li>
-            <strong>ID:</strong> {{id}}
+            <strong>Nome:</strong> {{nome}}
         </li>
         {% empty %}
         <li>Nenhuma pasta encontrada.</li>
         {% endfor %}
     </ul>
+    <form action="{% url 'index' %}">
+        <button>Voltar para a página inicial</button>
+    </form>
 </body>
 
 </html>

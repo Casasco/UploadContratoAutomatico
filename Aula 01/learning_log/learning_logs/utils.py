@@ -32,27 +32,15 @@ def listar_pastas_drive():
         # Criação do serviço Google Drive
         service = build('drive', 'v3', credentials=creds)
 
-        # Teste simples: lista os 5 primeiros arquivos no Drive
-        print("Testando a conexão com a API...")
-        results = service.files().list(
-            pageSize=5,
-            fields="nextPageToken, files(id, name)",
-            supportsAllDrives=True,
-            includeItemsFromAllDrives=True
-        ).execute()
-
-        items = results.get('files', [])
-        print("Arquivos retornados no teste:")
-        for item in items:
-            print(f"ID: {item['id']}, Nome: {item['name']}")
-
         # Query para listar apenas pastas no Drive compartilhado
         query = f"'{DRIVE_ID}' in parents and mimeType = 'application/vnd.google-apps.folder' and trashed = false"
 
         page_token = None  # Para paginação
 
+        print("Testando a conexão com a API...")
         # Loop para listar todas as pastas
         while True:
+            print("Conexão estabelecida")
             response = service.files().list(
                 q=query,
                 spaces='drive',
@@ -77,11 +65,6 @@ def listar_pastas_drive():
 
 
 def upload_pdf_to_folders(file_path, folder_ids):
-    from googleapiclient.discovery import build
-    from googleapiclient.http import MediaFileUpload
-    from google.oauth2.service_account import Credentials
-    import os
-    from colorama import Fore, Style
 
     SCOPES = ['https://www.googleapis.com/auth/drive']
     credentials = Credentials.from_service_account_file(
@@ -149,7 +132,7 @@ def upload_pdf_to_folders(file_path, folder_ids):
                                 print(Fore.YELLOW + f"Nome da subpasta: {subfolder3['name']}" + Style.RESET_ALL)
                                 print(Fore.YELLOW + f"ID da subpasta: {subfolder3['id']}" + Style.RESET_ALL)
                                 if str(subfolder3['name']).lower() == "c. contratos de exibição":
-                                    print(Fore.GREEN + "Pasta 'c. Contratos de Exibição' encontrada" + Style.RESET_ALL)
+                                    print(Fore.MAGENTA + "Pasta 'c. Contratos de Exibição' encontrada" + Style.RESET_ALL)
                                     # Salvar o ID da pasta encontrada
                                     id_PastaContratosExib = subfolder3['id']
 

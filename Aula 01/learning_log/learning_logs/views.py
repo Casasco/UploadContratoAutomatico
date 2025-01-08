@@ -23,7 +23,7 @@ def salvar_ids(request):
     """View para processar os IDs e nomes das pastas selecionadas"""
     if request.method == 'POST':
         # Captura os valores enviados no formulário
-        pastas_selecionadas = request.POST.getlist('pastas')
+        pastas_selecionadas = request.POST.getlist('pastascheckbox')
 
         # Separar IDs e nomes
         resultado = []
@@ -47,10 +47,9 @@ def subir_arquivo(request):
     if request.method == 'POST':
         id_pasta = request.POST.getlist('id_array')
         array_id = [id.strip('"') for id in id_pasta]
+        nomesPastas = request.POST.getlist('nome_pasta')
         print(Fore.YELLOW + "IDs das pastas processados para upload:" + Style.RESET_ALL, array_id)
-
-        # Debug: Exibir IDs processados
-        print(Fore.YELLOW + "IDs das pastas recebidos:" + Style.RESET_ALL, array_id)
+        print(Fore.RED + "Nomes das pastas selecionadas: " + Style.RESET_ALL, nomesPastas)
 
         # Receber o arquivo selecionado
         uploaded_file = request.FILES.get('uploaded_file')
@@ -78,15 +77,13 @@ def subir_arquivo(request):
                 # Remover o arquivo temporário
                 os.remove(file_path)
 
-                # Retornar resultados como JSON
-                return JsonResponse({'results': results})
             except Exception as e:
                 print(Fore.RED + f"Erro ao processar o arquivo: {str(e)}" + Style.RESET_ALL)
                 return HttpResponse(Fore.RED + "Erro ao processar o arquivo." + Style.RESET_ALL, status=500)
         else:
-            return HttpResponse("Nenhum arquivo enviado.", status=400)
+            return HttpResponse("Arquivo não selecionado.", status=400)
 
-    return render(request, 'learning_logs/subir_arquivo.html', {'array': array_id})
+    return render(request, 'learning_logs/subir_arquivo.html', {'array': array_id, 'nome_pastas': nomesPastas})
 
 
 

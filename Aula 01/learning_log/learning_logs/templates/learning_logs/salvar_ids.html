@@ -17,20 +17,11 @@
             {% for pasta in pastas %}
             <li>
                 <strong>Nome:</strong> {{ pasta.name }} <br>
-                <strong>ID:</strong> {{ pasta.id }}
                 <input type="hidden" name="id_array" value="{{ pasta.id }}">
+                <input type="hidden" name="nome_pasta" value="{{pasta.name}}">
             </li>
             {% empty %}
             <li>Nenhuma pasta selecionada.</li>
-            {% endfor %}
-        </ul>
-
-        <h2>IDs no Array:</h2>
-        <ul>
-            {% for id in id_array %}
-            <li>
-                <strong>ID:</strong> {{ id }}
-            </li>
             {% endfor %}
         </ul>
         <label for="fileInput">Escolha o arquivo:</label> <br>

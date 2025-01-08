@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastas do Google Drive</title>
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
@@ -19,10 +20,8 @@
             {% for pasta in pastas %}
             <li>
                 <!-- Cada checkbox agora inclui ID e Nome no value -->
-                <input type="checkbox" name="pastas" value="{{ pasta.id }}|{{ pasta.name }}">
+                <input type="checkbox" name="pastascheckbox" value="{{ pasta.id }}|{{ pasta.name }}">
                 <strong>Nome:</strong> {{ pasta.name }}
-                <strong> | </strong>
-                <strong>ID:</strong> {{ pasta.id }}
             </li>
             {% empty %}
             <li>Nenhuma pasta encontrada.</li>

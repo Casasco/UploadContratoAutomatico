@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    {% load static%}
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastas do Google Drive</title>
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Pastas no Drive Compartido</h1>
+    <h1>Escolha as Pastas:</h1>
 
     <!-- Formulário que envia os IDs selecionados ao servidor -->
     <form method="POST" action="{% url 'salvar_ids' %}">

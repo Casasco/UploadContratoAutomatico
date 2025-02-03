@@ -1,9 +1,27 @@
 body {
     background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 h1 {
     color: #333;
-    text-align: center;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    list-style-image: url();
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333
+}
+
+ul li:hover {
+    background-color: #333;
+    cursor: pointer;
 }

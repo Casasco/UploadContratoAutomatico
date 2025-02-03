@@ -887,3 +887,14 @@ Traceback (most recent call last):
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
 INFO:django.utils.autoreload:C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\learning_log\settings.py changed, reloading.
+ERROR:root:Erro ao listar pastas: [Errno 2] No such file or directory: 'C:\\Users\\Geral\\Desktop\\Curso de Django\\Aula 01\\learning_log\\credentials\\uploadcontratos-442920-4a331bd12026.json'
+INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:django.request:Internal Server Error: /subir_arquivo/
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:root:Erro ao listar pastas: expected str, bytes or os.PathLike object, not NoneType
+INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+WARNING:django.request:Bad Request: /subir_arquivo/
+INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.

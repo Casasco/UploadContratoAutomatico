@@ -9,7 +9,7 @@ from colorama import Fore, Style
 logging.basicConfig(filename='drive_api.log', level=logging.ERROR)
 
 # Caminho para o arquivo de credenciais e ID do Drive compartilhado
-GOOGLE_APPLICATION_CREDENTIALS = r"C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\credentials\uploadcontratos-442920-4a331bd12026.json"
+GOOGLE_APPLICATION_CREDENTIALS = r#CAMINHO PARA CREDENCIAL
 DRIVE_ID = '0AKlI-riQF64nUk9PVA'
 
 def listar_pastas_drive():
@@ -68,7 +68,7 @@ def upload_pdf_to_folders(file_path, folder_ids):
 
     SCOPES = ['https://www.googleapis.com/auth/drive']
     credentials = Credentials.from_service_account_file(
-        r"C:\Users\Geral\Desktop\Curso de Django\Aula 01\learning_log\credentials\uploadcontratos-442920-4a331bd12026.json",
+        r#CAMINHO PARA CREDENCIAL,
         scopes=SCOPES
     )
     service = build('drive', 'v3', credentials=credentials)

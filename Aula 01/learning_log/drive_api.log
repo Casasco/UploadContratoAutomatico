@@ -898,3 +898,11 @@ INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aul
 INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
 WARNING:django.request:Bad Request: /subir_arquivo/
 INFO:django.utils.autoreload:C:\Users\gabri\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:root:Erro ao listar pastas: Expecting value: line 1 column 1 (char 0)
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\teste teste teste\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:root:Erro ao listar pastas: Expecting value: line 1 column 1 (char 0)
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\teste teste teste\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+ERROR:root:Erro ao listar pastas: [Errno 2] No such file or directory: 'C:\\Users\\Geral\\Desktop\\teste teste teste\\UploadContratoAutomatico\\Aula 01\\learning_log\\credentials\\uploadcontratos-442920-4a331bd12026.json'
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\teste teste teste\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\teste teste teste\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Geral\Desktop\UploadContratoAutomatico\Aula 01\learning_log\learning_logs\utils.py changed, reloading.
